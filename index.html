@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <header class="wip-hero">
+    <div class="hero-grid">
+
+      <h1 class="wip-title">wip</h1>
+
+      <p class="hero-note hero-note--top">
+        A working record of research-in-progress — fragments, sources, and
+        half-formed arguments collected as the project takes shape.
+      </p>
+
+      <div class="glitch-image" id="glitch-toggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle between glitched and clean image">
+        <img class="glitch-layer glitch-layer--clean" src="assets/glitch-result.jpg" alt="Clean architectural illustration of a village street with an Internet Cafe sign">
+        <img class="glitch-layer glitch-layer--glitch" src="assets/glitch.jpg" alt="RGB-glitched version of the same village street illustration">
+        <span class="glitch-scanlines" aria-hidden="true"></span>
+        <span class="glitch-tag">Internet Café</span>
+        <span class="glitch-hint">click to reveal</span>
+      </div>
+
+      <p class="hero-note hero-note--left">
+        Every source is a fragment cut from a larger, noisier signal —
+        reassembled here without pretending the seams don't show.
+      </p>
+
+      <p class="hero-note hero-note--right">
+        status: in progress, subject to revision, held loosely.
+      </p>
+
+      <span class="spark spark--1">✦</span>
+      <span class="spark spark--2">✦</span>
+      <span class="spark spark--3">+</span>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Research sections">
+    <button class="tab-btn active" role="tab" aria-selected="true" data-target="research-question">Research Question</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="keywords">Keywords</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="intersecting-fields">Intersecting Fields</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="historical-lineage">Historical Lineage</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="community">Community</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="situated-technology">Situated Technology</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="methods">Methods</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-target="reference-images">Reference Images</button>
+  </nav>
+
+  <main class="tab-panels">
+
+    <section id="research-question" class="tab-panel active" role="tabpanel">
+      <h2 class="panel-heading">Research Question</h2>
+      <p class="panel-hint">What is the central question driving this project? State it plainly, then note what's still unresolved about it.</p>
+      <div class="placeholder-box">Add your research question here.</div>
+    </section>
+
+    <section id="keywords" class="tab-panel" role="tabpanel">
+      <h2 class="panel-heading">Keywords</h2>
+      <p class="panel-hint">The recurring terms and concepts anchoring this research — list them as tags.</p>
+      <div class="tag-row">
+        <span class="tag-chip">keyword</span>
+        <span class="tag-chip">keyword</span>
+        <span class="tag-chip">keyword</span>
+        <span class="tag-chip">keyword</span>
+      </div>
+    </section>
+
+    <section id="intersecting-fields" class="tab-panel" role="tabpanel">
+      <h2 class="panel-heading">Intersecting Fields</h2>
+      <p class="panel-hint">Which disciplines or domains does this work sit between or draw from?</p>
+      <div class="placeholder-box">List intersecting fields and how each one informs the project.</div>
+    </section>
+
+    <section id="historical-lineage" class="tab-panel" role="tabpanel">
+      <h2 class="panel-heading">Historical Lineage</h2>
+      <p class="panel-hint">Trace the precedents — the projects, technologies, or ideas this work descends from.</p>
+      <div class="placeholder-box">Map the historical lineage here, earliest to most recent.</div>
+    </section>
+
+    <section id="community" class="tab-panel" role="tabpanel">
+      <h2 class="panel-heading">Community</h2>
+      <p class="panel-hint">Who is this for, who is affected, and who has a stake in how it turns out?</p>
+      <div class="placeholder-box">Describe the community(ies) engaged by or implicated in this work.</div>
+    </section>
+
+    <section id="situated-technology" class="tab-panel" role="tabpanel">
+      <h2 class="panel-heading">Situated Technology</h2>
+      <p class="panel-hint">How is the technology shaped by — and how does it shape — its specific context of use?</p>
+      <div class="placeholder-box">Describe the technology's situated context here.</div>
+    </section>
+
+    <section id="methods" class="tab-panel" role="tabpanel">
+      <h2 class="panel-heading">Methods</h2>
+      <p class="panel-hint">The approach: how information was gathered, tested, or made.</p>
+      <div class="placeholder-box">Outline the methods used or planned.</div>
+    </section>
+
+    <section id="reference-images" class="tab-panel" role="tabpanel">
+      <h2 class="panel-heading">Reference Images</h2>
+      <p class="panel-hint">Visual precedents, mood, and source material.</p>
+      <div class="ref-grid">
+        <div class="ref-slot ref-slot--filled"><img src="assets/glitch-result.jpg" alt="Clean village street illustration"></div>
+        <div class="ref-slot ref-slot--filled"><img src="assets/glitch.jpg" alt="RGB-glitched version of the village street illustration"></div>
+        <div class="ref-slot">image</div>
+        <div class="ref-slot">image</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wip-footer">
+    <p>wip — last touched 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
