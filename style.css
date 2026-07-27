@@ -383,6 +383,16 @@ body {
   margin: auto;
 }
 
+.proposed-image-frame {
+  max-width: 420px;
+  border: 1px solid var(--ink);
+}
+
+.proposed-image-frame img {
+  width: 100%;
+  display: block;
+}
+
 /* ---------- footer ---------- */
 
 .wip-footer {
